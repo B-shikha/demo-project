@@ -13,7 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-public class NewTestNg {
+public class FB_tittle_TestNg {
 	
 private WebDriver driver;
   @Test
@@ -35,7 +35,7 @@ private WebDriver driver;
 			//WebDriver driver=new ChromeDriver(); 
 			driver.get("https://www.facebook.com/");
 			System.out.println(driver.getTitle());
-			Assert.assertEquals("Facebook – log in or sign up", driver.getTitle());
+			Assert.assertEquals("Facebook ï¿½ log in or sign up", driver.getTitle());
 			System.out.println("assert equal passed.");
 			Assert.assertNotNull(driver.getTitle());
 			System.out.println("assertNotNull passed.");
@@ -44,7 +44,7 @@ private WebDriver driver;
 			Assert.assertNotSame("Failed becz shikha is idiot.", "out ", driver.getTitle());
 			System.out.println("NOT SAME");
 		
-			Assert.assertNotSame("Passed", "Facebook – log in or sign up", driver.getTitle());
+			Assert.assertNotSame("Passed", "Facebook ï¿½ log in or sign up", driver.getTitle());
 			System.out.println("SAME");
 			Assert.assertEquals(driver.getTitle().contains("Facebook"), true);
 			System.out.println("assertEquals passed.");
